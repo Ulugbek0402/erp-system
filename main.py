@@ -10,7 +10,17 @@ def auth_menu():
             """)
             choice = input("Enter your choice: ")
             if choice == "1":
-                login()
+                result = login()
+                if result == "super_admin":
+                    return super_admin_menu()
+                elif result == "admin":
+                    return admin_menu()
+                elif result == "teacher":
+                    return teacher_menu()
+                elif result == "student":
+                    return student_men()
+                else:
+                    return auth_menu()
             elif choice == "2":
                 print("Good bye!")
                 break
