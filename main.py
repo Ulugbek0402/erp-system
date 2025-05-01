@@ -39,10 +39,7 @@ def super_admin_menu():
                 2. Create admin
                 3. Delete admin
                 4. Show statistics
-                5. Show branches
-                6. Create branch
-                7. Delete branch
-                8. Logout    
+                5. Logout    
             """)
             choice = input("Enter your choice: ")
             if choice == "1":
@@ -54,12 +51,6 @@ def super_admin_menu():
             elif choice == "4":
                 pass
             elif choice == "5":
-                pass
-            elif choice == "6":
-                pass
-            elif choice == "7":
-                pass
-            elif choice == "8":
                 print("Good bye!")
                 break
             else:
