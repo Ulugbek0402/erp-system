@@ -1,4 +1,5 @@
 from auth import login, logout
+from supper_admin import show_all_admins, delete_admin, create_admin
 
 
 def auth_menu():
@@ -38,19 +39,16 @@ def super_admin_menu():
                 1. Show all admins
                 2. Create admin
                 3. Delete admin
-                4. Show statistics
-                5. Logout    
+                4. Logout    
             """)
             choice = input("Enter your choice: ")
             if choice == "1":
-                pass
+                show_all_admins()
             elif choice == "2":
-                pass
+                create_admin()
             elif choice == "3":
-                pass
+                delete_admin()
             elif choice == "4":
-                pass
-            elif choice == "5":
                 print("Good bye!")
                 break
             else:
